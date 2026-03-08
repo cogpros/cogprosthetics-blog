@@ -7,7 +7,7 @@ categories: [agents, security]
 
 20,000 people just starred a tool that pipes raw internet into AI agents. Nobody is talking about the problem with that.
 
-A tweet went viral yesterday about Scrapling -- a Python scraping library with a built-in MCP server. The pitch: "give your AI agent unrestricted internet access." 668 bookmarks. People are saving this to use it.
+A tweet went viral last week about Scrapling -- a Python scraping library with a built-in MCP server. The pitch: "give your AI agent unrestricted internet access." 668 bookmarks. People are saving this to use it.
 
 The tool itself is well built. 92% test coverage, clean deps, no telemetry. It fetches a page, converts it to markdown, and hands it back to your LLM through MCP. Locally. No data leaves your machine besides the request.
 
