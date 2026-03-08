@@ -4,6 +4,7 @@ title: "20K Stars and Nobody Mentioned Prompt Injection"
 date: 2026-03-07
 categories: [agents, security]
 audio: /assets/audio/20k-stars.mp3
+description: "20,000 people starred a tool that pipes raw internet into AI agents. The MCP protocol has no concept of trusted vs untrusted content. Here's why that matters."
 ---
 
 20,000 people just starred a tool that pipes raw internet into AI agents. Nobody is talking about the problem with that.
