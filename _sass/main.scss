@@ -1,0 +1,253 @@
+:root {
+  --bg: #0d0a0b;
+  --bg-surface: #1a1215;
+  --bg-card: #231a1d;
+  --burgundy: #8b1a2b;
+  --burgundy-light: #a62639;
+  --burgundy-glow: rgba(139, 26, 43, 0.3);
+  --text: #e8e0e2;
+  --text-dim: #9a8f92;
+  --text-bright: #f5f0f1;
+  --accent: #c4434f;
+  --code-bg: #1a1215;
+  --border: #2a2023;
+  --link: #c4434f;
+  --link-hover: #e05a66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--link-hover);
+  }
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--burgundy-light);
+    letter-spacing: 0.02em;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  .site-nav a {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-left: 1.5rem;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+}
+
+// Main content
+.page-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+// Post list (index)
+.post-list {
+  list-style: none;
+
+  li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .post-date {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .post-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-bright);
+    display: block;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  .post-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    margin-top: 0.4rem;
+    line-height: 1.5;
+  }
+}
+
+// Single post
+.post {
+  .post-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .post-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    line-height: 1.3;
+  }
+
+  .post-meta {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-top: 0.5rem;
+  }
+
+  .post-content {
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      margin: 2rem 0 0.8rem;
+      padding-top: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    ul, ol {
+      margin: 0 0 1.2rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--burgundy);
+      padding: 0.5rem 1rem;
+      margin: 1.2rem 0;
+      color: var(--text-dim);
+      background: var(--bg-surface);
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      background: var(--code-bg);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+    }
+
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1.2rem 0;
+
+      code {
+        background: none;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    strong {
+      color: var(--text-bright);
+      font-weight: 600;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  text-align: center;
+
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+}
+
+// Responsive
+@media (max-width: 600px) {
+  html { font-size: 15px; }
+  .page-content { padding: 2rem 1rem; }
+
+  .site-header .wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .site-header .site-nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}

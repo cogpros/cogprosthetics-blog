@@ -1,0 +1,29 @@
+title: cogprosthetics
+description: "AI-based cognitive prosthetics. The work, the framework, the case study."
+url: "https://cogprosthetics.com"
+baseurl: ""
+
+author:
+  name: Dustin Pollock
+  twitter: pyra_m1d
+
+timezone: America/Regina
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - tools/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
