@@ -7,7 +7,7 @@ description: "TBI took my memory. AI agents gave me a different kind back. This 
 audio: /assets/audio/building-with-scaffolding.mp3
 ---
 
-On February 10, 2016, I sustained a traumatic brain injury at work. I lost years to it. The systems that were supposed to help me used my injury against me while I had it.
+On February 10, 2016, I sustained a traumatic brain injury at work. I lost years of my life to it. The systems that were supposed to help me used my injury against me while I was most vulnerable. But I perservered.
 
 I'm not writing about that part today. That story is coming. It has its own name. Its own timeline.
 
@@ -19,13 +19,13 @@ TBI did a number on my working memory. I can think. I can plan. I can see a boar
 
 What doesn't work: holding all the threads at once. Details slip. Small things fall through. I lose the thread mid-sentence sometimes and have to come back for it. If I don't write something down, it's gone.
 
-For years the workaround was notebooks, phone notes, calendar reminders, and willpower. Some of it worked. Most of it was duct tape.
+For years the workaround was notebooks, phone notes, calendar reminders, and willpower. Some of it worked. Most of it was duct tape. And bong hoots. And doom scrolling.
 
 ## What Changed
 
-In late 2024 I started building with AI agents. Not as a novelty. Not as a productivity hack. As infrastructure.
+On February 10th, 2026 I started building with AI agents. Not as a novelty. Not as a productivity hack. As infrastructure.  Ten years to the day my accident happened.  A coincidence unreveald to me until my agent revealed it to me yesterday.
 
-Two agents. Odin handles business strategy, content, scheduling, orchestration. EOM handles technical work: file operations, system configuration, infrastructure. They share a workspace. They hand off tasks to each other. They remember what I told them three weeks ago.
+Two agents. Odin handles business strategy, content, scheduling, orchestration. EOM handles technical work: file operations, system configuration, infrastructure. They share a workspace. They hand off tasks to each other. They remember what I told them last night and three weeks ago.
 
 Together, they function as a cognitive prosthetic.
 
@@ -61,9 +61,9 @@ That's what this is. I build with scaffolding now. The building is mine. The sca
 
 ## Why This Site Exists
 
-This site documents the work. The frameworks, the tools, the thinking behind them. What happens when someone who needs cognitive prosthetics decides to build them instead of waiting for someone else to.
+This site documents the work. The frameworks, the tools, the thinking behind them. What happens when someone who needs cognitive prosthetics decides to build them instead of waiting for someone else to?
 
-The position paper is coming. The documentary is in progress. The open protocol is being designed so other people can build their own.
+The position paper is coming. The documentary is in progress. The open protocol is being designed so other people can build their own. It's in someone's elses (agents) hands as of today.
 
 For now, this is the field report.
 
