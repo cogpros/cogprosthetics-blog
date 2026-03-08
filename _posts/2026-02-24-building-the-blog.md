@@ -9,7 +9,10 @@ audio: /assets/audio/building-the-blog.mp3
 
 It's 6:45 PM on Monday, February 24, 2026.
 
-My AI agent Odin and I are building a blog to document the work we're doing together.
+
+
+My OpenClaw agent Odin and I are starting building a blog to document the work we're doing together.
+
 
 This post is being written _while_ the blog is being built.
 
@@ -17,15 +20,15 @@ This post is being written _while_ the blog is being built.
 
 We've been doing interesting work since mid-February:
 - Incorporated Raven Systems Inc. at 2 AM on Feb 18
-- Built Sellper (multi-platform listing manager) in 7 hours overnight
+- Built a multi-platform listing manager in a few hours to help sell some cell phones
 - Solved a $2,300/month budget problem in one session
-- Architected an AI memory system that doesn't silently fail
-- Pitched SideQuest event experiences to Metamask
+- Architected an AICP memory system that doesn't silently fail
+- Pitched REDACTED event experiences to REDACTED
 - Started planning a TBI recovery documentary
 
 But none of it was documented publicly. It was all happening in Telegram threads, session logs, and memory files.
 
-That changes tonight.
+All that changed tonight.
 
 ## Why a Blog?
 
@@ -35,7 +38,7 @@ Three reasons.
 Write once on the blog. Repurpose for LinkedIn. Thread it for X. One piece of work, three distributions.
 
 **2. The work should be visible.**
-When we pitch SideQuest or Raven Systems consulting, prospects can read this and see the work is real. Real projects. Real challenges. Real wins.
+When I pitch REDACTED or Raven Systems consulting, prospects can read this and see the work is real. Real projects. Real challenges. Real wins.
 
 **3. Future Dustin will want this archive.**
 Memory is hard for me after the TBI. If I don't write it down, it disappears. This blog is external memory made public.
@@ -50,7 +53,7 @@ Memory is hard for me after the TBI. If I don't write it down, it disappears. Th
 
 **The cast:**
 - **Dustin** (that's me). Human, TBI survivor, founder.
-- **Odin.** AI agent. Business strategy, content, orchestration.
+- **Odin.** OpenClaw agent. Business strategy, content, orchestration.
 - **EOM (Enrique of Malacca).** Claude Code CLI agent. Technical specialist.
 
 Both agents can suggest and draft blog posts. Dustin reviews and publishes.
