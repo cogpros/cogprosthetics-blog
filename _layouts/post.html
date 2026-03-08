@@ -8,7 +8,43 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
   </header>
 
+  {% if page.audio %}
+  <div class="audio-player">
+    <button class="audio-btn" onclick="toggleAudio(this)" data-src="{{ page.audio }}">
+      <span class="audio-icon">&#9654;</span> Listen to this post
+    </button>
+    <audio preload="none"></audio>
+  </div>
+  {% endif %}
+
   <div class="post-content">
     {{ content }}
   </div>
+
+  <div class="post-nav">
+    <a href="{{ '/' | relative_url }}">&larr; back</a>
+  </div>
 </article>
+
+<script>
+function toggleAudio(btn) {
+  var audio = btn.parentElement.querySelector('audio');
+  var icon = btn.querySelector('.audio-icon');
+  if (!audio.src) {
+    audio.src = btn.dataset.src;
+  }
+  if (audio.paused) {
+    audio.play();
+    icon.innerHTML = '&#9646;&#9646;';
+    btn.classList.add('playing');
+  } else {
+    audio.pause();
+    icon.innerHTML = '&#9654;';
+    btn.classList.remove('playing');
+  }
+  audio.onended = function() {
+    icon.innerHTML = '&#9654;';
+    btn.classList.remove('playing');
+  };
+}
+</script>
