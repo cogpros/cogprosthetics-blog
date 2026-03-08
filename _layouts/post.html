@@ -10,10 +10,11 @@ layout: default
 
   {% if page.audio %}
   <div class="audio-player">
-    <button class="audio-btn" onclick="toggleAudio(this)" data-src="{{ page.audio }}">
-      <span class="audio-icon">&#9654;</span> Listen to this post
+    <button class="audio-btn" aria-label="Play audio version of this post" onclick="toggleAudio(this)" data-src="{{ page.audio }}">
+      <span class="audio-icon" aria-hidden="true">&#9654;</span> Listen to this post
     </button>
     <audio preload="none"></audio>
+    <noscript><audio controls src="{{ page.audio }}"></audio></noscript>
   </div>
   {% endif %}
 
@@ -28,23 +29,30 @@ layout: default
 
 <script>
 function toggleAudio(btn) {
-  var audio = btn.parentElement.querySelector('audio');
+  var audio = btn.parentElement.querySelector('audio:not(noscript audio)');
   var icon = btn.querySelector('.audio-icon');
-  if (!audio.src) {
+  if (!audio.src || audio.src === window.location.href) {
     audio.src = btn.dataset.src;
   }
   if (audio.paused) {
-    audio.play();
-    icon.innerHTML = '&#9646;&#9646;';
-    btn.classList.add('playing');
+    audio.play().then(function() {
+      icon.innerHTML = '&#9646;&#9646;';
+      btn.classList.add('playing');
+      btn.setAttribute('aria-label', 'Pause audio');
+    }).catch(function() {
+      icon.innerHTML = '&#9654;';
+      btn.classList.remove('playing');
+    });
   } else {
     audio.pause();
     icon.innerHTML = '&#9654;';
     btn.classList.remove('playing');
+    btn.setAttribute('aria-label', 'Play audio version of this post');
   }
   audio.onended = function() {
     icon.innerHTML = '&#9654;';
     btn.classList.remove('playing');
+    btn.setAttribute('aria-label', 'Play audio version of this post');
   };
 }
 </script>

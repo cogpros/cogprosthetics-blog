@@ -18,9 +18,13 @@ sass:
   sass_dir: _sass
   style: compressed
 
+twitter:
+  card: summary
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - tools/
