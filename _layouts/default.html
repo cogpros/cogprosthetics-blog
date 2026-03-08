@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+  if (localStorage.getItem('theme') === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+  </script>
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +20,7 @@
   <header class="site-header">
     <div class="wrapper">
       <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <button class="theme-toggle" onclick="toggleTheme()">light</button>
     </div>
   </header>
 
@@ -27,5 +33,24 @@
       <p>Dustin Pollock / Raven Systems Inc. / {{ site.time | date: '%Y' }}</p>
     </div>
   </footer>
+  <script>
+  (function() {
+    var btn = document.querySelector('.theme-toggle');
+    var current = document.documentElement.getAttribute('data-theme');
+    btn.textContent = current === 'light' ? 'dark' : 'light';
+    window.toggleTheme = function() {
+      var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      if (isLight) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        btn.textContent = 'light';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        btn.textContent = 'dark';
+      }
+    };
+  })();
+  </script>
 </body>
 </html>
