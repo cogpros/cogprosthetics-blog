@@ -2,14 +2,25 @@
 layout: default
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-    <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    {% if post.excerpt %}
-    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
+<section class="about-section">
+  <h2>What this is</h2>
+  <p>In 2016 I sustained a traumatic brain injury. I lost years to it. The systems that were supposed to help me used my injury against me while I had it.</p>
+  <p>I built my way back. AI-based cognitive prosthetics are part of how.</p>
+  <p>This site documents the work: the frameworks, the tools, the thinking behind them, and the case study of one person who needed them and built them anyway.</p>
+  <p class="about-sig">Dustin Pollock / Raven Systems Inc. / Saskatchewan, Canada</p>
+</section>
+
+<section class="posts-section">
+  <h2>Posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
