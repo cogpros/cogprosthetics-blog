@@ -3,6 +3,7 @@ layout: post
 title: "20K Stars and Nobody Mentioned Prompt Injection"
 date: 2026-03-07
 categories: [agents, security]
+audio: /assets/audio/20k-stars.mp3
 ---
 
 20,000 people just starred a tool that pipes raw internet into AI agents. Nobody is talking about the problem with that.
