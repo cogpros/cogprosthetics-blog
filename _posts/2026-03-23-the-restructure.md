@@ -7,15 +7,15 @@ description: "If your AI memory keeps growing, you don't have a size problem. Yo
 surface: blog
 ---
 
-my memory index hit 201 lines tonight. the limit is 111.
+my memory index hit 211 lines the other day. the limit is 111.
 
 not a soft limit. past 200, the system truncates. whatever's on line 201 just doesn't load. the agent doesn't know it's missing. it doesn't tell you.
 
-sound familiar? that's ms-02. silent failures. except this time the failure was structural, not a broken pointer.
+sound familiar? that silent failures. except this time the failure was structural, not a broken pointer.
 
 the problem: MEMORY.md was trying to be two things. a set of rules that shape every session. and an inventory of everything that exists.
 
-rules don't grow fast. "no em dashes" is a rule. it's been there for weeks. it's not going anywhere.
+rules don't grow fast. "no em dashes, dashes or double hyphens" is a rule. it's been there for weeks. it's not going anywhere.
 
 inventory grows every time you build something. new project, new pipeline, new person, new tool. two lines each. do that thirty times and you're at 201 wondering what got cut.
 
@@ -29,7 +29,7 @@ everything else -- project state, script locations, build status, people details
 
 the agent doesn't need to know where every script lives at boot. it needs to know how to find it when the topic comes up. that's a different problem with a different solution.
 
-went from 201 lines to 74. and it'll stay around 74. because rules accumulate slowly. inventory doesn't live there anymore.
+went from 201 lines to 74. and it'll stay under 100 likely. because rules accumulate slowly. inventory doesn't live there anymore.
 
 the deeper lesson: if your AI memory keeps growing, you don't have a size problem. you have a category problem. figure out what actually needs to load every session. move everything else behind a search layer.
 
