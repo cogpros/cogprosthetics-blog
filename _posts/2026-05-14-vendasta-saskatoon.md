@@ -33,12 +33,17 @@ ai didn't save me time. it saved me from myself.
 
 i'd still be sitting around smoking weed doom scrolling and watching tv if i hadn't spent the money on anthropic usage to organize my life and go from reactivity to proactivity.
 
-so i started building agents. each one bypasses one specific thing the injury broke.
+so i started building agents. not one big assistant. a stack of small ones, each pointed at one specific thing the injury broke.
 
-- eom keeps the thread. holds the details i drop. tracks what's open.
-- odin pushes back. plays contrarian when i'm about to do something dumb.
-- scrooge handles money and benefits, the stuff i'd otherwise let slip.
-- rhonda watches sleep and patterns i can't see from inside.
+what's running today, in plain terms:
+
+- **eom** keeps the thread. holds the details i drop. tracks what's open. that's the voice writing this.
+- **paperclip** is the company. every piece of work becomes a ticket with a status and an owner. nothing lives in my head if it doesn't have to.
+- **goalbuddy** is the project manager. takes my vague goals and breaks them into steps the rest of the system can actually run.
+- **cerberus, talos, and the grunt** are the workers. cerberus routes the work and reviews it. talos handles api calls and external tools. the grunt does the file ops and shell scripts.
+- **forseti** is the auditor. verifies the work is real before anything gets marked done. nothing closes on a worker's own say-so.
+- **quartermaster** triages incoming alerts and decides what actually needs me, versus what the system can handle without bothering me.
+- **shipwright** handles handoffs across repos and code review across the stack.
 
 i'm calling them cognitive prosthetics. the framework is called aicp. the research lives at [cogprosthetics.com](https://cogprosthetics.com). the tools live at [ravenai.ca](https://ravenai.ca). same project from two angles.
 
